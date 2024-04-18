@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./entry.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="weatherCard">
+        <form action="weatherForm">
+          <input id="cityInput" type="text" placeholder="Enter City Name" />
+          <button id="cityBtn">Search</button>
+        </form>
+      </div>
+      <div id="weatherDisplay">
+        <h1 id="cityName">City</h1>
+        <p id="weatherIcon">☀️</p>
+        <p id="temp">Temp</p>
+        <p id="day">Day</p>
+        <p id="humidity">Humidity</p>
+        <p id="errorDisplay">Unable to retrieve weather data</p>
+      </div>
+    </div>
+  </body>
+</html>
